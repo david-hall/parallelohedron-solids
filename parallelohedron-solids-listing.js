@@ -286,7 +286,7 @@ let pId = parseInt(searchParams.get("P")); // upper case
 if(Number.isNaN(pId)) {
 	pId = parseInt(searchParams.get("p")); // lower case
 }
-if(pId >= 1 && pId <= 92) {
+if(pId >= 1 && pId <= 42) {
 	initialId = pId;
 }
 const initialRow = tbody.rows[ initialId - 1 ];
@@ -361,4 +361,5 @@ function setScene( psolidSceneData ) {
   zomeSwitch.className = (showAnyEdges || (zometool == "true")) ? 'zome' : 'no-zome';
   viewer.scene = scene;
   viewer.update({ camera });
+
 }
