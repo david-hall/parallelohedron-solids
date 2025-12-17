@@ -42,7 +42,9 @@
     <EndBlock/>
     <NewCentroid/>
     <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="SELECT" struts="IGNORE"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <SelectManifestation point="5/2 4 -1 -2 -1 -3/2"/>
     <ApplyTool copyColors="true" name="bookmark.builtin/ball at origin" selectInputs="true"/>
     <TranslationTool name="tool-0"/>
@@ -69,12 +71,16 @@
     <BookmarkTool name="tool-2"/>
     <DeselectAll/>
     <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <Snapshot id="0"/>
     <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
     <DeselectAll/>
     <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <Snapshot id="1"/>
     <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
     <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
@@ -90,7 +96,7 @@
     <DeselectAll/>
   </EditHistory>
   <notes>
-    <page snapshot="0" title="Edges">
+    <page snapshot="0" title="Faces">
       <ViewModel distance="74.35712432861328" far="148.71424865722656" near="0.18589279055595398" parallel="true" stereoAngle="0.0" width="33.46070098876953">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="0.0" y="1.0" z="0.0"/>
