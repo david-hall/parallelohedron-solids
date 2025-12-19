@@ -1,7 +1,7 @@
 export const models = [
   //  All Blue = 11
   { id:1 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"AAA", url:"uploads/ThynStyx/AAA.vZome"},
-  { id:2 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"ABC", url:"uploads/ThynStyx/AAA.vZome"},
+  { id:2 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"ABC", url:"uploads/2lindell/ABC.vZome"},
   { id:3 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"ABD", url:"uploads/ThynStyx/AAA.vZome"},
   { id:4 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"ACD", url:"uploads/ThynStyx/AAA.vZome"},
   { id:5 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"BBB", url:"uploads/ThynStyx/AAA.vZome"},
@@ -97,6 +97,7 @@ export const models = [
   { id:89 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"GKM", url:"uploads/ThynStyx/AAA.vZome"},
   { id:90 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"GKN", url:"uploads/ThynStyx/GKN.vZome"},  
 ]
+
 
 
 
