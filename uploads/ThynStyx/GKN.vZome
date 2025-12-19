@@ -340,28 +340,13 @@
     <ApplyTool copyColors="true" name="tool-3" selectInputs="true"/>
     <DeselectAll/>
     <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <SelectManifestation point="0 0 0 0 0 0"/>
     <Delete/>
   </EditHistory>
-  <notes>
-    <page snapshot="0" title="Faces">
-      <ViewModel distance="77.39169311523438" far="154.78338623046875" near="0.19347922503948212" parallel="true" stereoAngle="0.0" width="34.826255798339844">
-        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-        <UpDirection x="0.0" y="1.0" z="0.0"/>
-        <LookDirection x="0.0" y="0.0" z="-1.0"/>
-      </ViewModel>
-      <content xml:space="preserve"/>
-    </page>
-    <page snapshot="1" title="Edges">
-      <ViewModel distance="77.39169311523438" far="154.78338623046875" near="0.19347922503948212" parallel="true" stereoAngle="0.0" width="34.826255798339844">
-        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-        <UpDirection x="0.0" y="1.0" z="0.0"/>
-        <LookDirection x="0.0" y="0.0" z="-1.0"/>
-      </ViewModel>
-      <content xml:space="preserve"/>
-    </page>
-  </notes>
+  <notes/>
   <sceneModel ambientLight="41,41,41" background="175,200,220">
     <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
     <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
