@@ -994,31 +994,14 @@
     <ShowHidden/>
     <DeselectAll/>
   </EditHistory>
-  <notes>
-    <page snapshot="2" title="Faces">
-      <ViewModel distance="57.33317565917969" far="114.66635131835938" near="0.14333294332027435" parallel="true" stereoAngle="0.0" width="25.799938201904297">
-        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-        <UpDirection x="0.0" y="1.0" z="0.0"/>
-        <LookDirection x="0.0" y="0.0" z="-1.0"/>
-      </ViewModel>
-      <content xml:space="preserve"/>
-    </page>
-    <page snapshot="3" title="Edges">
-      <ViewModel distance="57.33317565917969" far="114.66635131835938" near="0.14333294332027435" parallel="true" stereoAngle="0.0" width="25.799938201904297">
-        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-        <UpDirection x="0.0" y="1.0" z="0.0"/>
-        <LookDirection x="0.0" y="0.0" z="-1.0"/>
-      </ViewModel>
-      <content xml:space="preserve"/>
-    </page>
-  </notes>
+  <notes/>
   <sceneModel ambientLight="41,41,41" background="175,200,220">
     <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
     <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="57.33317565917969" far="114.66635131835938" near="0.14333294332027435" parallel="true" stereoAngle="0.0" width="25.799938201904297">
+    <ViewModel distance="113.1686782836914" far="226.33729553222656" near="0.28292179107666016" parallel="false" stereoAngle="0.0" width="50.92593002319336">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
       <UpDirection x="0.0" y="1.0" z="0.0"/>
       <LookDirection x="0.0" y="0.0" z="-1.0"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="111" field="golden" version="7.1">
-  <EditHistory editNumber="127" lastStickyEdit="125">
+  <EditHistory editNumber="129" lastStickyEdit="125">
     <StrutCreation anchor="0 0 0 0 0 0" index="1" len="2 4"/>
     <StrutCreation anchor="0 0 0 0 0 0" index="0" len="2 4"/>
     <StrutCreation anchor="2 4 0 0 0 0" index="1" len="2 4"/>
@@ -168,42 +168,31 @@
     <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
     <DeselectAll/>
     <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <Snapshot id="3"/>
     <ShowHidden/>
     <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
     <DeselectAll/>
     <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <Snapshot id="4"/>
     <ShowHidden/>
     <DeselectAll/>
+    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
+    <Delete/>
   </EditHistory>
-  <notes>
-    <page snapshot="3" title="Faces">
-      <ViewModel distance="59.6729850769043" far="119.3459701538086" near="0.14918243885040283" parallel="true" stereoAngle="0.0" width="26.85284423828125">
-        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-        <UpDirection x="0.0" y="1.0" z="0.0"/>
-        <LookDirection x="0.0" y="0.0" z="-1.0"/>
-      </ViewModel>
-      <content xml:space="preserve"/>
-    </page>
-    <page snapshot="4" title="Edges">
-      <ViewModel distance="59.6729850769043" far="119.3459701538086" near="0.14918243885040283" parallel="true" stereoAngle="0.0" width="26.85284423828125">
-        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-        <UpDirection x="0.0" y="1.0" z="0.0"/>
-        <LookDirection x="0.0" y="0.0" z="-1.0"/>
-      </ViewModel>
-      <content xml:space="preserve"/>
-    </page>
-  </notes>
+  <notes/>
   <sceneModel ambientLight="41,41,41" background="175,200,220">
     <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
     <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="59.6729850769043" far="119.3459701538086" near="0.14918243885040283" parallel="true" stereoAngle="0.0" width="26.85284423828125">
+    <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.2718280851840973" parallel="false" stereoAngle="0.0" width="48.9290771484375">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
       <UpDirection x="0.0" y="1.0" z="0.0"/>
       <LookDirection x="0.0" y="0.0" z="-1.0"/>

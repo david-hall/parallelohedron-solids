@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="111" field="golden" version="7.1">
-  <EditHistory editNumber="219" lastStickyEdit="217">
+  <EditHistory editNumber="221" lastStickyEdit="217">
     <SelectManifestation point="0 0 0 0 0 0"/>
     <ImportColoredMeshJson scale="1 0">{
   "field" : "golden",
@@ -410,32 +410,17 @@
     <Snapshot id="3"/>
     <ShowHidden/>
     <DeselectAll/>
+    <ApplyTool copyColors="true" name="tool-4" selectInputs="true"/>
+    <Hide/>
   </EditHistory>
-  <notes>
-    <page snapshot="3" title="Faces">
-      <ViewModel distance="82.17733001708984" far="164.3546600341797" near="0.2054433375597" parallel="true" stereoAngle="0.0" width="36.97980880737305">
-        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-        <UpDirection x="0.0" y="1.0" z="0.0"/>
-        <LookDirection x="0.0" y="0.0" z="-1.0"/>
-      </ViewModel>
-      <content xml:space="preserve"/>
-    </page>
-    <page snapshot="2" title="Edges">
-      <ViewModel distance="82.17733001708984" far="164.3546600341797" near="0.2054433375597" parallel="true" stereoAngle="0.0" width="36.97980880737305">
-        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-        <UpDirection x="0.0" y="1.0" z="0.0"/>
-        <LookDirection x="0.0" y="0.0" z="-1.0"/>
-      </ViewModel>
-      <content xml:space="preserve"/>
-    </page>
-  </notes>
+  <notes/>
   <sceneModel ambientLight="41,41,41" background="175,200,220">
     <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
     <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="75.85923767089844" far="151.71847534179688" near="0.18964815139770508" parallel="true" stereoAngle="0.0" width="34.13667297363281">
+    <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.2718282639980316" parallel="true" stereoAngle="0.0" width="48.9290885925293">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
       <UpDirection x="0.0" y="1.0" z="0.0"/>
       <LookDirection x="0.0" y="0.0" z="-1.0"/>
