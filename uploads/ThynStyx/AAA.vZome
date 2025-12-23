@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="111" field="golden" version="7.1">
-  <EditHistory editNumber="159" lastStickyEdit="157">
+  <EditHistory editNumber="147" lastStickyEdit="147">
     <StrutCreation anchor="0 0 0 0 0 0" index="1" len="2 4"/>
     <StrutCreation anchor="0 0 0 0 0 0" index="0" len="2 4"/>
     <StrutCreation anchor="2 4 0 0 0 0" index="1" len="2 4"/>
@@ -187,60 +187,44 @@
     <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
     <DeselectAll/>
     <Snapshot id="5"/>
-    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
-    <Hide/>
     <Snapshot id="6"/>
-    <ShowHidden/>
     <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
     <DeselectAll/>
-    <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
+    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
     <Hide/>
     <Snapshot id="7"/>
-    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
+    <ShowHidden/>
     <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
-    <Branch>
-      <DeselectAll/>
-      <Snapshot id="8"/>
-      <Snapshot id="9"/>
-    </Branch>
     <DeselectAll/>
-    <Snapshot id="10"/>
-    <Snapshot id="11"/>
     <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
     <Hide/>
-    <Snapshot id="12"/>
+    <Snapshot id="8"/>
     <ShowHidden/>
     <DeselectAll/>
-    <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
-    <DeselectAll/>
-    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
-    <Hide/>
-    <Snapshot id="13"/>
-    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
-    <DeselectAll/>
+    <Snapshot id="9"/>
   </EditHistory>
   <notes>
-    <page snapshot="13" title="Edges">
-      <ViewModel distance="108.73126983642578" far="217.46249389648438" near="0.2718280851840973" parallel="false" stereoAngle="0.0" width="48.9290657043457">
+    <page snapshot="7" title="Edges">
+      <ViewModel distance="108.73126983642578" far="217.46258544921875" near="0.2718281149864197" parallel="false" stereoAngle="0.0" width="48.92909622192383">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="0.0" y="1.0" z="0.0"/>
         <LookDirection x="0.0" y="0.0" z="-1.0"/>
       </ViewModel>
       <content xml:space="preserve"/>
     </page>
-    <page snapshot="12" title="Panels">
-      <ViewModel distance="108.73126983642578" far="217.46249389648438" near="0.2718280851840973" parallel="false" stereoAngle="0.0" width="48.9290657043457">
+    <page snapshot="8" title="Panels">
+      <ViewModel distance="108.73126983642578" far="217.46258544921875" near="0.2718281149864197" parallel="false" stereoAngle="0.0" width="48.92909622192383">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="0.0" y="1.0" z="0.0"/>
         <LookDirection x="0.0" y="0.0" z="-1.0"/>
       </ViewModel>
       <content xml:space="preserve"/>
     </page>
-    <page snapshot="10" title="Aesthetic view">
-      <ViewModel distance="108.73126983642578" far="217.46249389648438" near="0.2718280851840973" parallel="false" stereoAngle="0.0" width="48.9290657043457">
+    <page snapshot="9" title="Aesthetic view">
+      <ViewModel distance="108.73126983642578" far="217.46258544921875" near="0.2718281149864197" parallel="false" stereoAngle="0.0" width="48.92909622192383">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-        <UpDirection x="0.0" y="0.8506507873535156" z="-0.525731086730957"/>
-        <LookDirection x="-0.30901700258255005" y="-0.5" z="-0.80901700258255"/>
+        <UpDirection x="-0.1350453644990921" y="0.9256148338317871" z="-0.3535534143447876"/>
+        <LookDirection x="-0.80901700258255" y="-0.30901700258255005" z="-0.5"/>
       </ViewModel>
       <content xml:space="preserve"/>
     </page>
@@ -251,7 +235,7 @@
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="108.73126983642578" far="217.46249389648438" near="0.2718280851840973" parallel="false" stereoAngle="0.0" width="48.9290657043457">
+    <ViewModel distance="59.6729850769043" far="119.3459701538086" near="0.14918243885040283" parallel="false" stereoAngle="0.0" width="26.85284423828125">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
       <UpDirection x="0.0" y="1.0" z="0.0"/>
       <LookDirection x="0.0" y="0.0" z="-1.0"/>
