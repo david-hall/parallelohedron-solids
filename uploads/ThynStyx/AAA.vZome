@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="111" field="golden" version="7.1">
-  <EditHistory editNumber="129" lastStickyEdit="125">
+  <EditHistory editNumber="132" lastStickyEdit="132">
     <StrutCreation anchor="0 0 0 0 0 0" index="1" len="2 4"/>
     <StrutCreation anchor="0 0 0 0 0 0" index="0" len="2 4"/>
     <StrutCreation anchor="2 4 0 0 0 0" index="1" len="2 4"/>
@@ -184,15 +184,43 @@
     <DeselectAll/>
     <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
     <Delete/>
+    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="5"/>
   </EditHistory>
-  <notes/>
+  <notes>
+    <page snapshot="3" title="Panels">
+      <ViewModel distance="59.6729850769043" far="119.3459701538086" near="0.14918243885040283" parallel="true" stereoAngle="0.0" width="26.85284423828125">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="4" title="Edges">
+      <ViewModel distance="59.6729850769043" far="119.3459701538086" near="0.14918243885040283" parallel="true" stereoAngle="0.0" width="26.85284423828125">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="5" title="Aesthetic view">
+      <ViewModel distance="64.64297485351562" far="129.28594970703125" near="0.16160741448402405" parallel="false" stereoAngle="0.0" width="29.08934211730957">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="0.8506507873535156" z="-0.525731086730957"/>
+        <LookDirection x="-0.30901700258255005" y="-0.5" z="-0.80901700258255"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+  </notes>
   <sceneModel ambientLight="41,41,41" background="175,200,220">
     <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
     <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.2718280851840973" parallel="false" stereoAngle="0.0" width="48.9290771484375">
+    <ViewModel distance="59.6729850769043" far="119.3459701538086" near="0.14918243885040283" parallel="false" stereoAngle="0.0" width="26.85284423828125">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
       <UpDirection x="0.0" y="1.0" z="0.0"/>
       <LookDirection x="0.0" y="0.0" z="-1.0"/>
