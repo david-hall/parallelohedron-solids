@@ -3,7 +3,7 @@
   <EditHistory editNumber="42" lastStickyEdit="40">
     <StrutCreation anchor="0 0 0 0 0 0" dir="blue" index="0" len="2 4"/>
     <StrutCreation anchor="0 0 0 0 0 0" dir="blue" index="1" len="2 4"/>
-    <StrutCreation anchor="0 0 0 0 0 0" dir="blue" index="2" len="2 4"/>
+    <StrutCreation anchor="0 0 0 0 0 0" dir="blue" index="11" len="2 4"/>
     <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="IGNORE" struts="SELECT"/>
     <Parallelepiped/>
     <BeginBlock/>

@@ -2,8 +2,8 @@
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="116" field="golden" version="7.1">
   <EditHistory editNumber="42" lastStickyEdit="40">
     <StrutCreation anchor="0 0 0 0 0 0" dir="blue" index="0" len="2 4"/>
-    <StrutCreation anchor="0 0 0 0 0 0" dir="blue" index="1" len="2 4"/>
-    <StrutCreation anchor="0 0 0 0 0 0" dir="blue" index="2" len="2 4"/>
+    <StrutCreation anchor="0 0 0 0 0 0" dir="blue" index="25" len="2 4"/>
+    <StrutCreation anchor="0 0 0 0 0 0" dir="red" index="15" len="1 2"/>
     <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="IGNORE" struts="SELECT"/>
     <Parallelepiped/>
     <BeginBlock/>
