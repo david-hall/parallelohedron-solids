@@ -8,6 +8,14 @@ const tbody = table.createTBody();
 const viewer = document.getElementById( "viewer" );
 const showEdges = document.getElementById( "showEdges" );
 
+// After the first design is initially rendered,  
+// we don't want to update the camera position with each scene change 
+viewer .addEventListener( "vzome-design-rendered", (e) => {
+  console.log({camera})
+  camera = false; 
+}, 
+{once: true}); // automatically remove this listener after it is fired once 
+
 viewer .addEventListener( "vzome-scenes-discovered", (e) => {
   // Just logging this to the console for now. Not actually using the scenes list.
   const scenes = e.detail;
@@ -35,7 +43,7 @@ initialRow.scrollIntoView({ behavior: "smooth", block: "center" });
 
 showEdges.addEventListener("change", // use "change" here, not "click"
   () => {
-    setScene(selectedRow.dataset);
+    setScene();
   } );
 
 function selectParallelohedronSolid( psolid, tr ) {
@@ -43,12 +51,12 @@ function selectParallelohedronSolid( psolid, tr ) {
 	  const { url, id } = psolid;
 		if(url) {
 		  if ( selectedRow ) {
-			selectedRow.className = "";
+			  selectedRow.className = "";
 		  }
 		  selectedRow = tr;
 		  selectedRow.className = "selected";
 		  document.getElementById( "index" ).textContent = "P" +id;
-		  switchModel(psolid);
+		  switchModel(url);
 	  } else {
 		  alert("Parallelohedron-solid" + id + " is not yet available.\n\nPlease help us collect the full set.");
 	  }
@@ -56,48 +64,70 @@ function selectParallelohedronSolid( psolid, tr ) {
 }
 
 function fillRow(tr, psolid) {
-  const { id, title, field, url, edgescene, facescene, zometool } = psolid;
-  // Data attribute names must be prefixed with 'data-' and should not contain any uppercase letters,
-  tr.setAttribute("data-field", field);
-  tr.setAttribute("data-edgescene", edgescene);
-  tr.setAttribute("data-facescene", facescene);
-  tr.setAttribute("data-zometool", !!zometool);
+  const { id, title} = psolid;
   if(!tr.id) {
     tr.id = "psolid-" + id;
   }
   // Id column
   let td = tr.insertCell();
-  td.className = url ? "ident done" : "ident todo";
+  td.className = "ident done";
   td.innerHTML = "P" + id;
   // title column
   td = tr.insertCell();
   td.className = "title";
-  if(field == "Golden" && zometool == "true" && url) {
-    td.className += " zometool";
-  }
   if(!!title) {
     td.innerHTML = title;  
   }
+  addStrutColumns(tr, title);
 }
 
-function switchModel( psolid ) {
-  viewer.src = psolid.url;
-  setScene( psolid );
+function addStrutColumns(tr, title) {
+  let b=0, r=0, y=0;
+  if(title.length >= 3) {
+    for(let i = 0; i < 3; i++) {
+      let edge = title.substring(i, i+1);
+      if("ABCD"   .includes(edge)) { b+=4 }
+      if("EFGHIJK".includes(edge)) { b+=2 }
+      if("L"      .includes(edge)) { r+=4 }
+      if("EFGMN"  .includes(edge)) { r+=2 }
+      if("OP"     .includes(edge)) { y+=4 }
+      if("HIJKMN" .includes(edge)) { y+=2 }
+    }
+  } else {
+    console.warn("Title must be at least 3 characters long: " + title);
+  }
+  // 3 edge color columns
+  let td = tr.insertCell();
+  td.className = "blu";
+  if(b>0) {
+    td.innerHTML = b;  
+  }
+  td = tr.insertCell();
+  td.className = "red";
+  if(r>0) {
+    td.innerHTML = r;  
+  }
+  td = tr.insertCell();
+  td.className = "yel";
+  if(y>0) {
+    td.innerHTML = y;  
+  }
+  const total = b + r + y;
+  if(total != 12) {
+    console.error(`Total struts for ${title} should be 12, not ${total}.`);
+  }
 }
 
-// After the first design is initially rendered, 
-// we don't want to update the camera position with each scene change
-viewer .addEventListener( "vzome-design-rendered", (e) => {
-	camera = false;
-},
-{once: true}); // automatically remove this listener after it is fired once
+function switchModel(url) {
+  let scene = viewer.scene;
+  console.log({url, scene})
+  viewer.src = url;
+  setScene();
+}
 
-function setScene( psolidSceneData ) {
-  // psolidSceneData may be a psolid object from the JSON
-  /// or it may be selectedRow.dataset.
-  // Either one should have these properties, all in lower case
-  const { field, edgescene, facescene, zometool } = psolidSceneData;
-  const scene = (field == "Golden" && zometool == "true") && showEdges.checked ? edgescene : facescene;
+function setScene() {
+  const scene = showEdges.checked ? "Edges" : "Faces";
+  console.log({scene, camera})
   viewer.scene = scene;
   viewer.update({ camera });
 }
