@@ -14,11 +14,15 @@
   --color-yel-strut: rgb(240, 160, 0);
   --color-red-strut: rgb(175, 0, 0);
   --color-grn-strut: rgb(0, 141, 54);
+  --color-org-strut: rgb(235, 82, 0);
+  --color-pur-strut: rgb(155, 54, 211);
 
   --color-blu-panel: rgb(127, 186, 202);
   --color-yel-panel: rgb(247, 207, 127);
   --color-red-panel: rgb(215, 127, 127);
   --color-grn-panel: rgb(127, 198, 154);
+  --color-org-panel: rgb(245, 168, 127);
+  --color-pur-panel: rgb(190, 154, 233);
 
   --checbox-scale: 1.75;
 }
@@ -142,11 +146,14 @@ thead th:nth-child(2),
 tbody td:nth-child(2) {   /* name column */
   text-align: left;
 }
-thead th:nth-child(3),   /* blu column */
-thead th:nth-child(4),   /* red column */
-thead th:nth-child(5)    /* yel column */
+
+th.faces              /* face-color columns */
 {
-  width: 4ch; /* "Yellow" is the longest header text */
+  width: 12ch;        /* 3 * strut-count since colspan = 3 */
+}
+thead th.strut-count  /* blu, red & yel columns */
+{
+  width: 4ch;         /* "Yellow" is the longest header text */
 }
 
 th,
@@ -162,6 +169,52 @@ th.ident, td.done {
   font-weight: bold;
 }
 
+/* face color cells */
+td.face-plane-A,
+td.face-plane-E,
+td.face-plane-F,
+td.face-plane-H,
+td.face-plane-I,
+td.face-plane-L,
+td.face-plane-M,
+td.face-plane-N,
+td.face-plane-O
+{
+  background-color: var(--color-blu-panel);
+}
+
+td.face-plane-B,
+td.face-plane-C
+{
+  background-color: var(--color-red-panel);
+}
+
+td.face-plane-D
+{
+  background-color: var(--color-yel-panel);
+}
+
+td.face-plane-J,
+td.face-plane-P
+{
+  background-color: var(--color-grn-panel);
+}
+
+td.face-plane-G
+{
+  background-color: var(--color-org-panel);
+}
+
+td.face-plane-K
+{
+  background-color: var(--color-pur-panel);
+}
+
+tr.selected > td.face {
+  filter: brightness(1.1);
+}
+
+/* strut columns */
 td.blu {
   background-color: var(--color-blu-panel);
 }
@@ -215,7 +268,6 @@ th
 tr.selected,
 tr.selected td {
   border: 1px solid black;
-  background-color: var(--color-text);
   color: var(--color-text-selected);
   font-weight: bold;
 }

@@ -85,7 +85,20 @@ function fillRow(tr, psolid, id) {
   if(!!title) {
     td.innerHTML = title;  
   }
+  addFaceColumns(tr, title);
   addStrutColumns(tr, title);
+}
+
+function addFaceColumns(tr, title) {
+  const characters = [...title];
+  for(let i = 0; i < 3; i++) {
+    let td = tr.insertCell();
+    if(i < characters.length && "ABCDEFGHIJKLMNOP".includes(characters[i])) {
+      td.classList.add("face", `face-plane-${characters[i]}`)
+    } else {
+      console.warn("Title must be at least 3 characters long and include only upper case letters A-P: " + title);
+    }
+  }
 }
 
 function addStrutColumns(tr, title) {
