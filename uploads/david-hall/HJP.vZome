@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="116" field="golden" version="7.1">
   <EditHistory editNumber="42" lastStickyEdit="40">
-    <StrutCreation anchor="0 0 0 0 0 0" dir="yellow" index="0" len="1 1"/>
-    <StrutCreation anchor="0 0 0 0 0 0" dir="red" index="0" len="1 2"/>
     <StrutCreation anchor="0 0 0 0 0 0" dir="blue" index="0" len="2 4"/>
+    <StrutCreation anchor="0 0 0 0 0 0" dir="yellow" index="0" len="1 1"/>
+    <StrutCreation anchor="0 0 0 0 0 0" dir="yellow" index="5" len="1 1"/>
     <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="IGNORE" struts="SELECT"/>
     <Parallelepiped/>
     <BeginBlock/>
