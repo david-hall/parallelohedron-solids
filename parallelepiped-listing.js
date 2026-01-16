@@ -3,6 +3,7 @@ import { models } from './parallelepiped-models.js';
 let camera = true;
 let selectedRow;
 const searchParams = new URL(document.location).searchParams;
+const noScenes = (searchParams.get("no-scenes") != null)
 const table = document.getElementById( "partsTable" );
 const tbody = table.createTBody();
 const viewer = document.getElementById( "viewer" );
@@ -51,7 +52,14 @@ const initialRow = tbody.rows[ initialId - 1 ];
 selectParallelohedronSolid( models[ initialId - 1 ], initialRow );
 initialRow.scrollIntoView({ behavior: "smooth", block: "center" });
 
-showEdges.addEventListener("change", () => setScene() ) // use "change" here, not "click"
+if(noScenes){
+  const zomeSwitch = document.getElementById( "zome-switch" )
+  if(!! zomeSwitch) {
+    zomeSwitch.className = "no-zome"
+  }
+} else {
+  showEdges.addEventListener("change", () => setScene() ) // use "change" here, not "click"
+}
 
 function selectParallelohedronSolid( psolid, tr ) {
 	if(tr != selectedRow) {
@@ -147,7 +155,11 @@ function switchModel(url) {
 
 function setScene() {
   const scene = showEdges.checked ? "Edges" : "Faces";
-  // console.log({scene, camera})
-  viewer.scene = scene;
+  if(noScenes) {
+    console.warn(`Using the default scene instead of '${scene}'.`)
+  } else {
+    // console.log({scene, camera})
+    viewer.scene = scene;
+  }
   viewer.update({ camera });
 }
