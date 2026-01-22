@@ -156,7 +156,7 @@ function switchModel(url) {
 function setScene() {
   const scene = showEdges.checked ? "Edges" : "Faces";
   if(noScenes) {
-    console.warn(`Using the default scene instead of '${scene}'.`)
+    // console.log(`Using the default scene instead of '${scene}' because 'no-scenes' mode is active.`)
   } else {
     // console.log({scene, camera})
     viewer.scene = scene;
